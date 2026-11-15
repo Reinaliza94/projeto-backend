@@ -1,16 +1,108 @@
-# React + Vite
+# Drip Store
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+Aplicação de e-commerce em React para uma loja virtual de produtos esportivos e streetwear. O projeto inclui página inicial, catálogo de produtos, detalhes do item, categorias, carrinho e histórico de pedidos.
 
-Currently, two official plugins are available:
+## Tecnologias
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- React 19
+- Vite
+- React Router DOM
+- PrimeReact / PrimeIcons
+- Styled Components
 
-## React Compiler
+## Requisitos
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Antes de rodar o projeto, certifique-se de ter instalado:
 
-## Expanding the Oxlint configuration
+- Node.js 18 ou superior
+- npm 9 ou superior
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+## Clonando o projeto
+
+```bash
+git clone <url-do-repositorio>
+cd drip-store
+```
+
+## Instalação das dependências
+
+No diretório do projeto, execute:
+
+```bash
+npm install
+```
+
+## Executando em modo de desenvolvimento
+
+```bash
+npm run dev
+```
+
+Após isso, o Vite iniciará a aplicação e geralmente abrirá o projeto em:
+
+```text
+http://localhost:5173
+```
+
+Se a porta 5173 estiver ocupada, o Vite pode utilizar outra porta disponível e exibir a URL correta no terminal.
+
+## Build para produção
+
+Para gerar a versão otimizada do projeto:
+
+```bash
+npm run build
+```
+
+Os arquivos prontos para deploy serão gerados na pasta `dist/`.
+
+## Preview da build
+
+Para visualizar a versão final localmente:
+
+```bash
+npm run preview
+```
+
+A aplicação será servida em uma porta como:
+
+```text
+http://localhost:4173
+```
+
+## Verificação de lint
+
+```bash
+npm run lint
+```
+
+## Estrutura principal do projeto
+
+```text
+drip-store/
+├── public/
+├── src/
+│   ├── assets/
+│   ├── components/
+│   ├── context/
+│   ├── data/
+│   ├── pages/
+│   ├── App.jsx
+│   ├── main.jsx
+│   └── index.css
+├── index.html
+├── package.json
+├── vite.config.js
+└── README.md
+```
+
+## Observações
+
+- O projeto foi construído com Vite, então todos os comandos acima devem ser executados no terminal, na raiz do projeto.
+- Para mudanças futuras no código, o ambiente de desenvolvimento é o mais indicado para testar e ajustar a interface.
+
+## Dicas
+
+- Utilize `npm run dev` durante o desenvolvimento para aproveitar o hot reload.
+- Use `npm run build` antes de enviar o projeto para produção ou para validar que a aplicação compila corretamente.
+- O projeto está hospedado em https://dristore1.netlify.app
