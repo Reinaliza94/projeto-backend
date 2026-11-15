@@ -1,0 +1,32 @@
+.navbar {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 35px;
+    padding: 15px;
+    background-color: #ffffff;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #474747;
+    font-size: 16px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+    color: #C92071;
+}
+
+.navbar a.active {
+    color: #C92071;
+    font-weight: 600;
+}
+
+.navbar .home-link.active {
+    text-decoration: underline;
+    text-decoration-color: #C92071;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 5px;
+}
