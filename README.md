@@ -151,4 +151,3 @@ As tabelas `users`, `categories` e `products` são definidas pelo Sequelize com 
 
 - Utilize `npm run dev` durante o desenvolvimento para aproveitar o hot reload.
 - Use `npm run build` antes de enviar o projeto para produção ou para validar que a aplicação compila corretamente.
-- O projeto está hospedado em https://dristore1.netlify.app
