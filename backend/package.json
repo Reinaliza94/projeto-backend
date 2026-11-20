@@ -1,0 +1,32 @@
+{
+  "name": "drip-store-backend",
+  "version": "1.0.0",
+  "private": true,
+  "main": "src/server.js",
+  "scripts": {
+    "build:frontend": "npm --prefix ../frontend run build",
+    "predev": "npm run build:frontend",
+    "dev": "nodemon src/server.js",
+    "prestart": "npm run build:frontend",
+    "start": "node src/server.js",
+    "seed": "node src/seedCatalog.js",
+    "test": "node --test"
+  },
+  "dependencies": {
+    "bcrypt": "^6.0.0",
+    "cors": "^2.8.5",
+    "dotenv": "^18.0.10",
+    "express": "^5.1.0",
+    "jsonwebtoken": "^9.0.3",
+    "sequelize": "^6.37.8",
+    "sqlite3": "^6.0.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.14"
+  },
+  "overrides": {
+    "sequelize": {
+      "uuid": "^11.1.1"
+    }
+  }
+}
